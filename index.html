@@ -9,7 +9,7 @@
     <meta name="description" content="Tired of hauling bags to the laundromat or looking for cheap washers and dryers for sale near you? Get clean, tested appliances delivered straight to your house starting at $25/mo with free delivery, setup, and lifetime repairs included!">
     <meta name="keywords" content="laundromat near me, coin laundry Cañon City, washhouse Gillette WY, washer and dryer for sale, buy washing machine, cheap dryers, used appliances, laundry services alternative">
 
-    <!-- Tab Icon Branding Token (Replaces the generic Earth Icon with your custom Logo) -->
+    <!-- Tab Icon Branding Token -->
     <link rel="icon" type="image/png" href="images/logo.png">
     <!-- Advanced JSON-LD Local SEO Schema Data Architecture -->
     <script type="application/ld+json">
@@ -77,7 +77,7 @@
             </div>
         </nav>
     </header>
-    <!-- Clean Splash Hero (Image Only - Text block sits beautifully below) -->
+    <!-- Clean Splash Hero (Image Only) -->
     <section class="hero-image-only"></section>
 
     <!-- Introduction Block Sitting Below The Front Picture -->
@@ -107,7 +107,7 @@
                 <span class="badge-location">Gillette, Wyoming</span>
             </div>
 
-            <!-- Territory Information Profiles -->
+            <!-- Clean Text Locations -->
             <div class="maps-grid">
                 <div class="map-box">
                     <h3>Cañon City, CO</h3>
@@ -118,16 +118,17 @@
                     <p class="map-link-text">Providing home delivery and appliance leasing services strictly within the town limits of Gillette, Wyoming.</p>
                 </div>
             </div>
-            <!-- New Location Expansion Request Module -->
+            <!-- New Location Expansion Request Module (Switched to open-access FormSubmit gateway) -->
             <div class="expansion-box">
                 <h4 class="lang-en">Don't see your city listed above?</h4>
                 <h4 class="lang-es" style="display:none;">¿No ve su ciudad en la lista?</h4>
                 <p class="lang-en">Let us know where you need appliance rentals! We track requests to plan our next service expansion hubs.</p>
                 <p class="lang-es" style="display:none;">¡Díganos dónde necesita alquileres! Registramos los pedidos para planificar nuestras próximas áreas de servicio.</p>
                 
-                <form action="https://formspree.io" method="POST" class="expansion-inline-form">
-                    <input type="hidden" name="Inquiry Type" value="New Expansion Location Request Target">
-                    <input type="text" name="Requested Expansion City/Zip" required placeholder="Enter City, State or Zip Code..." id="expInput">
+                <form action="https://formsubmit.co" method="POST" class="expansion-inline-form">
+                    <input type="hidden" name="_subject" value="[New Territory Demand Vote] - Washer and Dry Rentals Expansion Request">
+                    <input type="hidden" name="_honeypot" style="display:none">
+                    <input type="text" name="Requested Expansion City or Zip" required placeholder="Enter City, State or Zip Code..." id="expInput">
                     <button type="submit" class="btn btn-primary btn-small lang-en">Submit Vote</button>
                     <button type="submit" class="btn btn-primary btn-small lang-es" style="display:none;">Enviar Voto</button>
                 </form>
@@ -262,11 +263,11 @@
                 </button>
             </div>
 
-            <!-- View Module A: Live Text Request Form (Clean Submission Architecture) -->
+            <!-- View Module A: Re-Engineered Customer Booking Form Routing straight to FormSubmit -->
             <div id="contactFormContainer">
-                <form class="contact-form" action="https://formspree.io" method="POST">
-                    <input type="hidden" name="_subject" value="[New Potential Customer Inquiry] - Washer and Dry Rentals Website Request">
-                    <input type="hidden" name="Lead Source" value="Washer and Dry Rentals Live Site">
+                <form class="contact-form" action="https://formsubmit.co" method="POST">
+                    <input type="hidden" name="_subject" value="[NEW CLIENT ORDER SIGNUP] - Washer and Dry Rentals Inquiry Lead">
+                    <input type="hidden" name="_honeypot" style="display:none">
 
                     <div class="form-group">
                         <label for="name" class="lang-en">Full Name</label>
@@ -345,7 +346,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript Processing Core (Bug Fix: Old pricing form loops completely stripped) -->
+    <!-- JavaScript Multi-Language & Calculation Processing Core -->
     <script>
         function toggleLanguage() {
             const currentLang = document.getElementById('langToggle').value;
