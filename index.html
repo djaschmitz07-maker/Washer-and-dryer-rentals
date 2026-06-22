@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Research-Backed SEO Title & Meta Tokens (Targets Sales, Buyers, and Laundromats) -->
+    <!-- Research-Backed SEO Title & Meta Tokens -->
     <title>Washers and Dryers For Sale or Rent | Better Laundromat Alternative | Cañon City CO & Gillette WY</title>
     <meta name="description" content="Tired of hauling bags to the laundromat or looking for cheap washers and dryers for sale near you? Get clean, tested appliances delivered straight to your house starting at $25/mo with free delivery, setup, and lifetime repairs included!">
     <meta name="keywords" content="laundromat near me, coin laundry Cañon City, washhouse Gillette WY, washer and dryer for sale, buy washing machine, cheap dryers, used appliances, laundry services alternative">
@@ -107,7 +107,7 @@
                 <span class="badge-location">Gillette, Wyoming</span>
             </div>
 
-            <!-- Simplified Information Block Layout (Strictly inside the town limits) -->
+            <!-- Territory Information Profiles -->
             <div class="maps-grid">
                 <div class="map-box">
                     <h3>Cañon City, CO</h3>
@@ -118,7 +118,7 @@
                     <p class="map-link-text">Providing home delivery and appliance leasing services strictly within the town limits of Gillette, Wyoming.</p>
                 </div>
             </div>
-            <!-- New Location Expansion Request Module (Method Explicitly Set to POST) -->
+            <!-- New Location Expansion Request Module -->
             <div class="expansion-box">
                 <h4 class="lang-en">Don't see your city listed above?</h4>
                 <h4 class="lang-es" style="display:none;">¿No ve su ciudad en la lista?</h4>
@@ -157,8 +157,8 @@
                     <li><strong>Reparaciones y reemplazos en el sitio 100% gratis</strong></li>
                     <li>Términos mensuales flexibles sin contratos forzosos</li>
                 </ul>
-                <a href="#rent" onclick="selectPackage('washer')" class="btn btn-primary lang-en">Lease Washer</a>
-                <a href="#rent" onclick="selectPackage('washer')" class="btn btn-primary lang-es" style="display:none;">Arrendar Lavadora</a>
+                <button type="button" onclick="selectPackage('washer')" class="btn btn-primary lang-en">Lease Washer</button>
+                <button type="button" onclick="selectPackage('washer')" class="btn btn-primary lang-es" style="display:none;">Arrendar Lavadora</button>
             </div>
             <div class="price-card featured">
                 <div class="badge lang-en">Best Utility Value</div>
@@ -166,8 +166,8 @@
                 <h3 class="lang-en">Full Laundry Combo Set</h3>
                 <h3 class="lang-es" style="display:none;">Juego Combo Completo</h3>
                 <div class="price">$50<span>/mo</span></div>
-                <p class="set-disclaimer lang-en">💡 Note: Combo packages consist of one reliable washer and one heavy-duty dryer machine rented together as an operational set (units may vary in make, model year, or matching color layout styling).</p>
-                <p class="set-disclaimer lang-es" style="display:none;">💡 Nota: Los paquetes combo consisten en una lavadora confiable y una secadora de servicio pesado alquiladas juntas como un juego operativo (las unidades pueden variar en marca, año de modelo o estilo de color coincidente).</p>
+                <p class="set-disclaimer lang-en">💡 Note: Combo packages consist of one reliable washer and one heavy-duty dryer machine rented together as an operational set.</p>
+                <p class="set-disclaimer lang-es" style="display:none;">💡 Nota: Los paquetes combo consisten en una lavadora confiable y una secadora de servicio pesado alquiladas juntas como un juego operativo.</p>
                 <ul class="features-list lang-en">
                     <li>Complete Laundry Combo Set (Washer + Dryer)</li>
                     <li><strong>100% Free Delivery & Full Local Install</strong></li>
@@ -180,8 +180,8 @@
                     <li><strong>Reparaciones y reemplazos en el sitio 100% gratis</strong></li>
                     <li>Términos de alquiler mensuales flexibles</li>
                 </ul>
-                <a href="#rent" onclick="selectPackage('set')" class="btn btn-primary lang-en">Lease Combo Set</a>
-                <a href="#rent" onclick="selectPackage('set')" class="btn btn-primary lang-es" style="display:none;">Arrendar Juego</a>
+                <button type="button" onclick="selectPackage('set')" class="btn btn-primary lang-en">Lease Combo Set</button>
+                <button type="button" onclick="selectPackage('set')" class="btn btn-primary lang-es" style="display:none;">Arrendar Juego</button>
             </div>
 
             <div class="price-card">
@@ -194,8 +194,8 @@
                     <li><strong>100% Free Repairs & On-Site Replacements</strong></li>
                     <li>Flexible monthly terms with no lock-in contracts</li>
                 </ul>
-                <a href="#rent" onclick="selectPackage('dryer')" class="btn btn-primary lang-en">Lease Dryer</a>
-                <a href="#rent" onclick="selectPackage('dryer')" class="btn btn-primary lang-es" style="display:none;">Arrendar Secadora</a>
+                <button type="button" onclick="selectPackage('dryer')" class="btn btn-primary lang-en">Lease Dryer</button>
+                <button type="button" onclick="selectPackage('dryer')" class="btn btn-primary lang-es" style="display:none;">Arrendar Secadora</button>
             </div>
         </div>
     </section>
@@ -262,7 +262,7 @@
                 </button>
             </div>
 
-            <!-- View Module A: Live Text Request Form (Method Explicitly Set to POST) -->
+            <!-- View Module A: Live Text Request Form (Clean Submission Architecture) -->
             <div id="contactFormContainer">
                 <form class="contact-form" action="https://formspree.io" method="POST">
                     <input type="hidden" name="_subject" value="[New Potential Customer Inquiry] - Washer and Dry Rentals Website Request">
@@ -345,7 +345,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript Multi-Language & Calculation Processing Core -->
+    <!-- JavaScript Processing Core (Bug Fix: Old pricing form loops completely stripped) -->
     <script>
         function toggleLanguage() {
             const currentLang = document.getElementById('langToggle').value;
