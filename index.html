@@ -3,43 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Delivery Sign Up</title>
+    <title>Washer & Dryer Rental Signup</title>
+
     <style>
-        body { font-family: Arial, sans-serif; max-width: 500px; margin: 50px auto; padding: 20px; text-align: center; }
-        input, select, textarea { width: 100%; padding: 12px; margin: 10px 0; box-sizing: border-box; font-size: 1rem; }
-        button { width: 100%; padding: 15px; background: #22c55e; color: white; border: none; font-size: 1.1rem; font-weight: bold; cursor: pointer; border-radius: 5px; }
-        button:hover { background: #16a34a; }
-        .box { border: 1px solid #ccc; padding: 20px; border-radius: 8px; background: #f9f9f9; }
+        *{
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            background:#f4f4f4;
+            max-width:600px;
+            margin:50px auto;
+            padding:20px;
+        }
+
+        h1{
+            text-align:center;
+            color:#222;
+        }
+
+        p{
+            text-align:center;
+            color:#555;
+        }
+
+        .box{
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        input,
+        select,
+        textarea{
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            border:1px solid #ccc;
+            border-radius:5px;
+            font-size:16px;
+        }
+
+        button{
+            width:100%;
+            padding:15px;
+            background:#22c55e;
+            color:white;
+            border:none;
+            border-radius:5px;
+            font-size:18px;
+            font-weight:bold;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#16a34a;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Washer & Dryer Rental Signup Test</h1>
-    <p>Fill this out to test your live data pipeline routing parameters.</p>
+    <h1>Washer & Dryer Rental Signup</h1>
+
+    <p>Fill out the form below and we'll contact you.</p>
 
     <div class="box">
-        <!-- Secure open-access FormSubmit gateway explicitly mapped to your email address -->
-        <form action="https://formsubmit.co" method="POST">
-            
-            <!-- Hidden configuration token that stops robot spam inputs -->
-            <input type="hidden" name="_honeypot" style="display:none">
-            <input type="hidden" name="_subject" value="[NEW RENTAL TEST SIGNUP Lead Incoming]">
 
-            <input type="text" name="Full Name" placeholder="Full Name" required>
-            <input type="tel" name="Phone Number" placeholder="Phone Number" required>
-            <input type="email" name="Email Address" placeholder="Email Address" required>
-            
-            <select name="Preferred Setup Package" required>
-                <option value="Full Combo Washer & Dryer Set ($50/mo)">Full Combo Set ($50/mo)</option>
-                <option value="Single Washer ($25/mo)">Single Washer ($25/mo)</option>
-                <option value="Single Dryer ($25/mo)">Single Dryer ($25/mo)</option>
+        <form action="https://formsubmit.co/d.j.a.schmitz07@gmail.com" method="POST">
+
+            <!-- FormSubmit Settings -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="New Washer & Dryer Rental Lead">
+
+            <!-- Optional Thank You Page -->
+            <!--
+            <input type="hidden" name="_next" value="https://YOURUSERNAME.github.io/thankyou.html">
+            -->
+
+            <input
+                type="text"
+                name="Full Name"
+                placeholder="Full Name"
+                required>
+
+            <input
+                type="tel"
+                name="Phone Number"
+                placeholder="Phone Number"
+                required>
+
+            <input
+                type="email"
+                name="Email Address"
+                placeholder="Email Address"
+                required>
+
+            <select name="Preferred Package" required>
+                <option value="">Select Package</option>
+                <option value="Full Combo Set ($50/mo)">Full Combo Set ($50/mo)</option>
+                <option value="Washer Only ($25/mo)">Washer Only ($25/mo)</option>
+                <option value="Dryer Only ($25/mo)">Dryer Only ($25/mo)</option>
             </select>
 
-            <input type="text" name="Ideal Target Delivery Date" placeholder="Ideal Delivery Date (e.g. Next Saturday)" required>
-            <textarea name="Delivery Address Location" rows="3" placeholder="Full Service Delivery Address" required></textarea>
+            <input
+                type="text"
+                name="Preferred Delivery Date"
+                placeholder="Preferred Delivery Date"
+                required>
 
-            <button type="submit">Submit Test Rental Request</button>
+            <textarea
+                name="Delivery Address"
+                rows="4"
+                placeholder="Full Delivery Address"
+                required></textarea>
+
+            <button type="submit">
+                Submit Rental Request
+            </button>
+
         </form>
+
     </div>
 
 </body>
