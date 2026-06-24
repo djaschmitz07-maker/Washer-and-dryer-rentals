@@ -5,37 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Delivery Sign Up</title>
     <style>
-        body { font-family: Arial, sans-serif; background: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .form-container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,.1); width: 400px; max-width: 90%; text-align: center; }
-        input { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; font-size: 1rem; }
-        button { width: 100%; padding: 12px; border: none; background: #007bff; color: white; font-size: 16px; border-radius: 5px; cursor: pointer; font-weight: bold; }
-        button:hover { opacity: .9; }
+        body { font-family: Arial, sans-serif; max-width: 500px; margin: 50px auto; padding: 20px; text-align: center; }
+        input, select, textarea { width: 100%; padding: 12px; margin: 10px 0; box-sizing: border-box; font-size: 1rem; }
+        button { width: 100%; padding: 15px; background: #22c55e; color: white; border: none; font-size: 1.1rem; font-weight: bold; cursor: pointer; border-radius: 5px; }
+        button:hover { background: #16a34a; }
+        .box { border: 1px solid #ccc; padding: 20px; border-radius: 8px; background: #f9f9f9; }
     </style>
 </head>
 <body>
 
-<div class="form-container">
+    <h1>Washer & Dryer Rental Signup Test</h1>
+    <p>Fill this out to test your live data pipeline routing parameters.</p>
 
-    <h2>Test Delivery Sign Up</h2>
-    <p>Fill this out once to activate your GitHub form server loop.</p>
+    <div class="box">
+        <!-- Secure open-access FormSubmit gateway explicitly mapped to your email address -->
+        <form action="https://formsubmit.co" method="POST">
+            
+            <!-- Hidden configuration token that stops robot spam inputs -->
+            <input type="hidden" name="_honeypot" style="display:none">
+            <input type="hidden" name="_subject" value="[NEW RENTAL TEST SIGNUP Lead Incoming]">
 
-    <!-- Secure open-access FormSubmit gateway explicitly mapped to your email address -->
-    <form action="https://formsubmit.co" method="POST">
+            <input type="text" name="Full Name" placeholder="Full Name" required>
+            <input type="tel" name="Phone Number" placeholder="Phone Number" required>
+            <input type="email" name="Email Address" placeholder="Email Address" required>
+            
+            <select name="Preferred Setup Package" required>
+                <option value="Full Combo Washer & Dryer Set ($50/mo)">Full Combo Set ($50/mo)</option>
+                <option value="Single Washer ($25/mo)">Single Washer ($25/mo)</option>
+                <option value="Single Dryer ($25/mo)">Single Dryer ($25/mo)</option>
+            </select>
 
-        <!-- Disable CAPTCHA verification so it submits instantly -->
-        <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="Ideal Target Delivery Date" placeholder="Ideal Delivery Date (e.g. Next Saturday)" required>
+            <textarea name="Delivery Address Location" rows="3" placeholder="Full Service Delivery Address" required></textarea>
 
-        <input type="text" name="Name" placeholder="Your Name" required>
-        <input type="email" name="Email" placeholder="Your Email" required>
-        <input type="tel" name="Phone" placeholder="Your Phone Number" required>
-
-        <button type="submit">
-            Send Test Request
-        </button>
-
-    </form>
-
-</div>
+            <button type="submit">Submit Test Rental Request</button>
+        </form>
+    </div>
 
 </body>
 </html>
