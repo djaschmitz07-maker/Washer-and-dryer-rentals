@@ -3,130 +3,403 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Washer & Dryer Rental Signup</title>
+    
+    <!-- Research-Backed SEO Title & Meta Tokens (Targets Sales, Buyers, and Laundromats) -->
+    <title>Washers and Dryers For Sale or Rent | Better Laundromat Alternative | Cañon City CO & Gillette WY</title>
+    <meta name="description" content="Tired of hauling bags to the laundromat or looking for cheap washers and dryers for sale near you? Get clean, tested appliances delivered straight to your house starting at $25/mo with free delivery, setup, and lifetime repairs included!">
+    <meta name="keywords" content="laundromat near me, coin laundry Cañon City, washhouse Gillette WY, washer and dryer for sale, buy washing machine, cheap dryers, used appliances, laundry services alternative">
 
-    <style>
-        *{
-            box-sizing:border-box;
-        }
+    <!-- Tab Icon Branding Token (Replaces the generic Earth Icon with your custom Logo) -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <!-- Advanced JSON-LD Local SEO Schema Data Architecture -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "In-Home Laundry Appliance Rental Systems",
+      "description": "Skip the public laundromat and save hundreds compared to buying retail appliances. Clean, tested, and leveled washers and dryers delivered directly to your home.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Washer and Dry Rentals"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "25.00",
+        "highPrice": "50.00",
+        "offerCount": "3",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "description": "Affordable monthly in-home alternative to weekly laundromat expenses and expensive appliance stores."
+        },
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Cañon City, Colorado"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Gillette, Wyoming"
+          }
+        ]
+      }
+    }
+    </script>
 
-        body{
-            font-family:Arial, sans-serif;
-            background:#f4f4f4;
-            max-width:600px;
-            margin:50px auto;
-            padding:20px;
-        }
-
-        h1{
-            text-align:center;
-            color:#222;
-        }
-
-        p{
-            text-align:center;
-            color:#555;
-        }
-
-        .box{
-            background:white;
-            padding:25px;
-            border-radius:10px;
-            box-shadow:0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        input,
-        select,
-        textarea{
-            width:100%;
-            padding:12px;
-            margin:10px 0;
-            border:1px solid #ccc;
-            border-radius:5px;
-            font-size:16px;
-        }
-
-        button{
-            width:100%;
-            padding:15px;
-            background:#22c55e;
-            color:white;
-            border:none;
-            border-radius:5px;
-            font-size:18px;
-            font-weight:bold;
-            cursor:pointer;
-        }
-
-        button:hover{
-            background:#16a34a;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>Washer & Dryer Rental Signup</h1>
+    <!-- Main Navigation Header with Dual Contact Anchor Triggers -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo-container">
+                <img src="images/logo.png" alt="Washer and Dry Rentals Logo" class="nav-logo" onerror="this.style.display='none'">
+                <span class="logo-text">Washer and Dry Rentals</span>
+            </a>
+            
+            <div class="nav-right-block">
+                <ul class="nav-links">
+                    <li><a href="#service-areas" class="lang-en">Service Areas</a><a href="#service-areas" class="lang-es" style="display:none;">Áreas de Servicio</a></li>
+                    <li><a href="#pricing" class="lang-en">Pricing Plans</a><a href="#pricing" class="lang-es" style="display:none;">Planes de Precios</a></li>
+                    <li><a href="#gallery" class="lang-en">Recent Setups</a><a href="#gallery" class="lang-es" style="display:none;">Instalaciones</a></li>
+                    <li><a href="#rent" onclick="switchContactMode('form')" class="lang-en">Book for Delivery</a><a href="#rent" onclick="switchContactMode('form')" class="lang-es" style="display:none;">Reservar Entrega</a></li>
+                    <li><a href="#rent" onclick="switchContactMode('call')" class="lang-en">Call for Delivery</a><a href="#rent" onclick="switchContactMode('call')" class="lang-es" style="display:none;">Llamar para Entrega</a></li>
+                </ul>
 
-    <p>Fill out the form below and we'll contact you.</p>
+                <!-- Language Selector -->
+                <div class="language-selector">
+                    <select id="langToggle" onchange="toggleLanguage()">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Clean Splash Hero (Image Only) -->
+    <section class="hero-image-only"></section>
 
-    <div class="box">
+    <!-- Introduction Block Sitting Below The Front Picture -->
+    <section class="intro-text-section">
+        <div class="container-narrow text-center">
+            <h1 class="lang-en">Washers & Dryers Rented Directly To Your Home</h1>
+            <h1 class="lang-es" style="display:none;">Lavadoras y Secadoras Alquiladas Directamente a Su Hogar</h1>
+            
+            <p class="lang-en">Why spend hundreds buying retail, or waste your weekends waiting around at a public laundromat? Skip the coin machines! Get clean, tested appliances delivered straight to your home starting at only $25/month. Free delivery, installation, and lifetime repair or replacement coverage are completely covered.</p>
+            <p class="lang-es" style="display:none;">¿Por qué gastar cientos comprando en tiendas o perder los fines de semana en una lavandería pública? ¡Olvídese de las monedas! Obtenga electrodomésticos limpios entregados directamente a su hogar desde solo $25/mes con entrega e instalación gratis.</p>
+            
+            <a href="#rent" onclick="switchContactMode('form')" class="btn btn-hero lang-en">Get Your Unit Now</a>
+            <a href="#rent" onclick="switchContactMode('form')" class="btn btn-hero lang-es" style="display:none;">Obtenga Su Unidad Ahora</a>
+        </div>
+    </section>
+    <!-- Core Service Banner & Location Badges -->
+    <section id="service-areas" class="service-banner">
+        <div class="container">
+            <h2 class="lang-en">📍 Proudly Serving Our Local Communities</h2>
+            <h2 class="lang-es" style="display:none;">📍 Orgullosamente Sirviendo a Nuestras Comunidades Locales</h2>
+            
+            <p class="lang-en">We provide exclusive delivery, installation, and zero-cost repair services strictly within:</p>
+            <p class="lang-es" style="display:none;">Ofrecemos servicios exclusivos de entrega, instalación y reparación sin costo estrictamente dentro de:</p>
+            
+            <div class="location-badges">
+                <span class="badge-location">Cañon City, Colorado</span>
+                <span class="badge-location">Gillette, Wyoming</span>
+            </div>
 
-        <form action="https://formsubmit.co/d.j.a.schmitz07@gmail.com" method="POST">
+            <!-- Clean Text Locations -->
+            <div class="maps-grid">
+                <div class="map-box">
+                    <h3>Cañon City, CO</h3>
+                    <p class="map-link-text">Providing home delivery and appliance leasing services strictly within the town limits of Cañon City, Colorado.</p>
+                </div>
+                <div class="map-box">
+                    <h3>Gillette, WY</h3>
+                    <p class="map-link-text">Providing home delivery and appliance leasing services strictly within the town limits of Gillette, Wyoming.</p>
+                </div>
+            </div>
 
-            <!-- FormSubmit Settings -->
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_subject" value="New Washer & Dryer Rental Lead">
+            <!-- New Location Expansion Request Module (FormSubmit Gateway Lock) -->
+            <div class="expansion-box">
+                <h4 class="lang-en">Don't see your city listed above?</h4>
+                <h4 class="lang-es" style="display:none;">¿No ve su ciudad en la lista?</h4>
+                <p class="lang-en">Let us know where you need appliance rentals! We track requests to plan our next service expansion hubs.</p>
+                <p class="lang-es" style="display:none;">¡Díganos dónde necesita alquileres! Registramos los pedidos para planificar nuestras próximas áreas de servicio.</p>
+                
+                <form action="https://formsubmit.co" method="POST" class="expansion-inline-form">
+                    <input type="text" name="Requested Expansion City or Zip" required placeholder="Enter City, State or Zip Code..." id="expInput">
+                    <button type="submit" class="btn btn-primary btn-small lang-en">Submit Vote</button>
+                    <button type="submit" class="btn btn-primary btn-small lang-es" style="display:none;">Enviar Voto</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Display Cards Section -->
+    <section id="pricing" class="section">
+        <h2 class="section-title lang-en">Monthly Rates</h2>
+        <h2 class="section-title lang-es" style="display:none;">Tarifas Mensuales</h2>
+        
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3 class="lang-en">Single Washer Only</h3>
+                <h3 class="lang-es" style="display:none;">Solo Lavadora Individual</h3>
+                <div class="price">$25<span>/mo</span></div>
+                <ul class="features-list lang-en">
+                    <li>High-efficiency heavy load clean cycles</li>
+                    <li><strong>100% Free Delivery & Full Local Install</strong></li>
+                    <li><strong>100% Free Repairs & On-Site Replacements</strong></li>
+                    <li>Flexible monthly terms with no lock-in contracts</li>
+                </ul>
+                <ul class="features-list lang-es" style="display:none;">
+                    <li>Ciclos de limpieza de alta eficiencia para carga pesada</li>
+                    <li><strong>Entrega e instalación local 100% gratuita</strong></li>
+                    <li><strong>Reparaciones y reemplazos en el sitio 100% gratis</strong></li>
+                    <li>Términos mensuales flexibles sin contratos forzosos</li>
+                </ul>
+                <button type="button" onclick="selectPackage('washer')" class="btn btn-primary lang-en">Lease Washer</button>
+                <button type="button" onclick="selectPackage('washer')" class="btn btn-primary lang-es" style="display:none;">Arrendar Lavadora</button>
+            </div>
 
-            <!-- Optional Thank You Page -->
-            <!--
-            <input type="hidden" name="_next" value="https://YOURUSERNAME.github.io/thankyou.html">
-            -->
+            <div class="price-card featured">
+                <div class="badge lang-en">Best Utility Value</div>
+                <div class="badge lang-es" style="display:none;">Mejor Valor</div>
+                <h3 class="lang-en">Full Laundry Combo Set</h3>
+                <h3 class="lang-es" style="display:none;">Juego Combo Completo</h3>
+                <div class="price">$50<span>/mo</span></div>
+                <p class="set-disclaimer lang-en">💡 Note: Combo packages consist of one reliable washer and one heavy-duty dryer machine rented together as an operational set.</p>
+                <p class="set-disclaimer lang-es" style="display:none;">💡 Nota: Los paquetes combo consisten en una lavadora confiable y una secadora de servicio pesado alquiladas juntas como un juego operativo.</p>
+                <ul class="features-list lang-en">
+                    <li>Complete Laundry Combo Set (Washer + Dryer)</li>
+                    <li><strong>100% Free Delivery & Full Local Install</strong></li>
+                    <li><strong>100% Free Repairs & On-Site Replacements</strong></li>
+                    <li>Flexible month-to-month rental terms</li>
+                </ul>
+                <ul class="features-list lang-es" style="display:none;">
+                    <li>Juego de lavandería combo completo (Lavadora + Secadora)</li>
+                    <li><strong>Entrega e instalación local 100% gratuita</strong></li>
+                    <li><strong>Reparaciones y reemplazos en el sitio 100% gratis</strong></li>
+                    <li>Términos de alquiler mensuales flexibles</li>
+                </ul>
+                <button type="button" onclick="selectPackage('set')" class="btn btn-primary lang-en">Lease Combo Set</button>
+                <button type="button" onclick="selectPackage('set')" class="btn btn-primary lang-es" style="display:none;">Arrendar Juego</button>
+            </div>
 
-            <input
-                type="text"
-                name="Full Name"
-                placeholder="Full Name"
-                required>
+            <div class="price-card">
+                <h3 class="lang-en">Single Dryer Only</h3>
+                <h3 class="lang-es" style="display:none;">Solo Secadora Individual</h3>
+                <div class="price">$25<span>/mo</span></div>
+                <ul class="features-list lang-en">
+                    <li>Heavy-duty rapid-dry tumbling configurations</li>
+                    <li><strong>100% Free Delivery & Full Local Install</strong></li>
+                    <li><strong>100% Free Repairs & On-Site Replacements</strong></li>
+                    <li>Flexible monthly terms with no lock-in contracts</li>
+                </ul>
+                <button type="button" onclick="selectPackage('dryer')" class="btn btn-primary lang-en">Lease Dryer</button>
+                <button type="button" onclick="selectPackage('dryer')" class="btn btn-primary lang-es" style="display:none;">Arrendar Secadora</button>
+            </div>
+        </div>
+    </section>
+    <!-- Visual Portfolio Gallery Section (3 clean items) -->
+    <section id="gallery" class="section-alt">
+        <div class="container">
+            <h2 class="section-title lang-en">Our Recent Local Installations</h2>
+            <h2 class="section-title lang-es" style="display:none;">Nuestras Instalaciones Locales Recientes</h2>
+            <p class="section-subtitle lang-en">Real units installed for your neighbors. Cleaned, rigorously tested, and completely ready to go!</p>
+            <p class="section-subtitle lang-es" style="display:none;">¡Unidades reales instaladas para sus vecinos. Limpias, rigurosamente probadas y completamente listas para funcionar!</p>
+            
+            <div class="gallery-grid gallery-three-items">
+                <div class="gallery-item">
+                    <img src="images/portfolio-1.jpg" alt="Local Installation 1" onerror="this.src='https://unsplash.com'">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/portfolio-2.jpg" alt="Local Installation 2" onerror="this.src='https://unsplash.com'">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/portfolio-3.jpg" alt="Local Installation 3" onerror="this.src='https://unsplash.com'">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Conversion Routing Panel and Dynamic Action Interface -->
+    <section id="rent" class="section" style="padding: 60px 20px; background: #f4f4f4;">
+        <div class="container-narrow" style="max-width: 600px; margin: 0 auto;">
 
-            <input
-                type="tel"
-                name="Phone Number"
-                placeholder="Phone Number"
-                required>
+            <!-- Grey Segmented Tab Slider Control Module Frame -->
+            <div class="tab-toggle-wrap" style="display: flex; justify-content: center; margin-bottom: 35px;">
+                <div class="tab-switcher" style="display: flex; background: #e4e4e7; padding: 4px; border-radius: 30px; position: relative; width: 340px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);">
+                    <div id="sliderBg" class="slider-bg" style="position: absolute; top: 4px; left: 4px; width: calc(50% - 4px); height: calc(100% - 8px); background: #0284c7; border-radius: 26px; z-index: 1; transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);"></div>
+                    <button type="button" id="tabForm" class="tab-btn active" onclick="switchContactMode('form')" style="flex: 1; padding: 12px 0; text-align: center; font-weight: bold; background: transparent; border: none; cursor: pointer; z-index: 2; font-size: 14px; font-family: Arial, sans-serif; transition: color 0.2s; color: #ffffff;">
+                        <span class="lang-en">Book Delivery</span><span class="lang-es" style="display:none;">Reservar Entrega</span>
+                    </button>
+                    <button type="button" id="tabCall" class="tab-btn" onclick="switchContactMode('call')" style="flex: 1; padding: 12px 0; text-align: center; font-weight: bold; background: transparent; border: none; cursor: pointer; z-index: 2; font-size: 14px; font-family: Arial, sans-serif; transition: color 0.2s; color: #52525b;">
+                        <span class="lang-en">Call Delivery</span><span class="lang-es" style="display:none;">Llamar Entrega</span>
+                    </button>
+                </div>
+            </div>
 
-            <input
-                type="email"
-                name="Email Address"
-                placeholder="Email Address"
-                required>
+            <!-- Lead Capture Interface styled cleanly with custom Blue Branding accents -->
+            <div id="contactFormContainer" class="box" style="background: white; padding: 35px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 5px solid #0284c7;">
+                <h2 style="text-align: center; color: #222; margin-bottom: 8px; font-family: Arial, sans-serif; font-size: 26px;">Washer & Dryer Rental Signup</h2>
+                <p style="text-align: center; color: #666; margin-bottom: 25px; font-family: Arial, sans-serif; font-size: 15px;">Fill out the form below and we'll contact you.</p>
 
-            <select name="Preferred Package" required>
-                <option value="">Select Package</option>
-                <option value="Full Combo Set ($50/mo)">Full Combo Set ($50/mo)</option>
-                <option value="Washer Only ($25/mo)">Washer Only ($25/mo)</option>
-                <option value="Dryer Only ($25/mo)">Dryer Only ($25/mo)</option>
-            </select>
+                <form action="https://formsubmit.co" method="POST">
 
-            <input
-                type="text"
-                name="Preferred Delivery Date"
-                placeholder="Preferred Delivery Date"
-                required>
+                    <!-- FormSubmit Configuration Settings Token Data -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="New Washer & Dryer Rental Lead">
 
-            <textarea
-                name="Delivery Address"
-                rows="4"
-                placeholder="Full Delivery Address"
-                required></textarea>
+                    <!-- Email address field removed permanently; collecting immediate client routing profiles -->
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label style="display: block; font-weight: bold; margin-bottom: 5px; color: #333; font-size: 14px; font-family: Arial, sans-serif;">Full Name</label>
+                        <input type="text" name="Full Name" placeholder="Full Name" required style="width:100%; padding:12px; border:1px solid #ccc; border-radius:5px; font-size:16px;">
+                    </div>
 
-            <button type="submit">
-                Submit Rental Request
-            </button>
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label style="display: block; font-weight: bold; margin-bottom: 5px; color: #333; font-size: 14px; font-family: Arial, sans-serif;">Phone Number</label>
+                        <input type="tel" name="Phone Number" placeholder="Phone Number" required style="width:100%; padding:12px; border:1px solid #ccc; border-radius:5px; font-size:16px;">
+                    </div>
 
-        </form>
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label style="display: block; font-weight: bold; margin-bottom: 5px; color: #333; font-size: 14px; font-family: Arial, sans-serif;">Preferred Package</label>
+                        <select name="Preferred Package" id="package" required style="width:100%; padding:12px; border:1px solid #ccc; border-radius:5px; font-size:16px; background: white; font-family: Arial, sans-serif;">
+                            <option value="">Select Package</option>
+                            <option value="Full Combo Set ($50/mo)">Full Combo Set ($50/mo)</option>
+                            <option value="Washer Only ($25/mo)">Washer Only ($25/mo)</option>
+                            <option value="Dryer Only ($25/mo)">Dryer Only ($25/mo)</option>
+                        </select>
+                    </div>
 
-    </div>
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label style="display: block; font-weight: bold; margin-bottom: 5px; color: #333; font-size: 14px; font-family: Arial, sans-serif;">Preferred Delivery Date</label>
+                        <input type="text" name="Preferred Delivery Date" placeholder="Preferred Delivery Date" required style="width:100%; padding:12px; border:1px solid #ccc; border-radius:5px; font-size:16px;">
+                    </div>
 
+                    <div class="form-group" style="margin-bottom: 25px;">
+                        <label style="display: block; font-weight: bold; margin-bottom: 5px; color: #333; font-size: 14px; font-family: Arial, sans-serif;">Full Delivery Address</label>
+                        <textarea name="Delivery Address" rows="4" placeholder="Full Delivery Address" required style="width:100%; padding:12px; border:1px solid #ccc; border-radius:5px; font-size:16px; font-family: Arial, sans-serif; resize: vertical;"></textarea>
+                    </div>
+
+                    <button type="submit" style="width:100%; padding:15px; background:#0284c7; color:white; border:none; border-radius:5px; font-size:18px; font-weight:bold; cursor:pointer; transition: background 0.2s;">
+                        Submit Rental Request
+                    </button>
+                </form>
+            </div>
+
+            <!-- View Module B: Instant Phone Click-to-Call Layout Box Layout -->
+            <div id="contactCallContainer" style="display: none;">
+                <div class="call-action-box" style="text-align: center; padding: 40px 20px; background: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #6b7280;">
+                    <h3 class="lang-en">Call for Delivery</h3>
+                    <h3 class="lang-es" style="display:none;">Llamar para Entrega</h3>
+                    <p class="lang-en">Click the button below to dial our service dispatch department directly. We will register your deployment request profile parameters over the phone line.</p>
+                    <p class="lang-es" style="display:none;">Haga clic en el botón de abajo para llamar directamente a nuestro departamento de despacho. Registraremos sus datos de entrega por teléfono.</p>
+                    
+                    <a href="tel:3074146029" class="btn btn-green-call" style="background: #22c55e; color: white; display: inline-flex; align-items: center; gap: 10px; font-size: 18px; padding: 15px 40px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+                        <svg class="phone-svg-icon-white" viewBox="0 0 24 24" style="width: 22px; height: 22px; fill: currentColor;">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        <span class="lang-en">Call Us: 307-414-6029</span>
+                        <span class="lang-es" style="display:none;">Llámenos: 307-414-6029</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Disclaimers -->
+    <footer>
+        <div class="footer-container">
+            <p class="footer-phone">Questions? Call Us Directly: <a href="tel:3074146029">307-414-6029</a></p>
+            <p>&copy; 2026 Washer and Dry Rentals. Serving Cañon City, CO and Gillette, WY. Maintenance, servicing, and installation are wholly included with every active account.</p>
+        </div>
+    </footer>
+    <!-- JavaScript Multi-Language & Calculation Processing Core -->
+    <script>
+        function toggleLanguage() {
+            const currentLang = document.getElementById('langToggle').value;
+            const enElements = document.querySelectorAll('.lang-en');
+            const esElements = document.querySelectorAll('.lang-es');
+            
+            if (currentLang === 'es') {
+                enElements.forEach(el => el.style.display = 'none');
+                esElements.forEach(el => el.style.display = 'block');
+                if(document.getElementById('expInput')) document.getElementById('expInput').placeholder = "Ingrese Ciudad, Estado o Código Postal...";
+                calculateTotal();
+            } else {
+                enElements.forEach(el => el.style.display = 'block');
+                esElements.forEach(el => el.style.display = 'none');
+                if(document.getElementById('expInput')) document.getElementById('expInput').placeholder = "Enter City, State or Zip Code...";
+                calculateTotal();
+            }
+        }
+
+        function calculateTotal() {
+            const isSpanish = document.getElementById('langToggle').value === 'es';
+            const setQuantity = parseInt(document.getElementById('calc-sets').value) || 0;
+            const singleQuantity = parseInt(document.getElementById('calc-indiv').value) || 0;
+            const overallMonthlyCost = (setQuantity * 50) + (singleQuantity * 25);
+            
+            const textString = isSpanish ? `Total Estimado: $${overallMonthlyCost} / mes` : `Estimated Total: $${overallMonthlyCost} / month`;
+            if(document.getElementById('total-output')) {
+                document.getElementById('total-output').innerText = textString;
+            }
+        }
+
+        function selectPackage(packageSelection) {
+            switchContactMode('form');
+            const selectDropdown = document.getElementById('package');
+            if(!selectDropdown) return;
+            
+            if(packageSelection === 'washer') selectDropdown.value = 'Washer Only ($25/mo)';
+            if(packageSelection === 'dryer') selectDropdown.value = 'Dryer Only ($25/mo)';
+            if(packageSelection === 'set') selectDropdown.value = 'Full Combo Set ($50/mo)';
+        }
+
+        function switchContactMode(mode) {
+            const tabForm = document.getElementById('tabForm');
+            const tabCall = document.getElementById('tabCall');
+            const sliderBg = document.getElementById('sliderBg');
+            const formBox = document.getElementById('contactFormContainer');
+            const callBox = document.getElementById('contactCallContainer');
+            const rentSection = document.getElementById('rent');
+
+            if (mode === 'form') {
+                if(tabForm) {
+                    tabForm.classList.add('active');
+                    tabForm.style.color = '#ffffff';
+                }
+                if(tabCall) {
+                    tabCall.classList.remove('active');
+                    tabCall.style.color = '#52525b';
+                }
+                if(sliderBg) {
+                    sliderBg.style.left = '4px';
+                    sliderBg.style.background = '#0284c7';
+                }
+                if(formBox) formBox.style.display = 'block';
+                if(callBox) callBox.style.display = 'none';
+            } else {
+                if(tabForm) {
+                    tabForm.classList.remove('active');
+                    tabForm.style.color = '#52525b';
+                }
+                if(tabCall) {
+                    tabCall.classList.add('active');
+                    tabCall.style.color = '#ffffff';
+                }
+                if(sliderBg) {
+                    sliderBg.style.left = 'calc(50% - 4px)';
+                    sliderBg.style.background = '#6b7280';
+                }
+                if(formBox) formBox.style.display = 'none';
+                if(callBox) callBox.style.display = 'block';
+            }
+
+            if(rentSection) {
+                rentSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 </body>
 </html>
