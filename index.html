@@ -127,6 +127,8 @@
                 <p class="lang-es" style="display:none;">¡Díganos dónde necesita alquileres! Registramos los pedidos para planificar nuestras próximas áreas de servicio.</p>
                 
                 <form action="https://formsubmit.co" method="POST" class="expansion-inline-form">
+                    <!-- API Field Compliance Token -->
+                    <input type="hidden" name="email" value="washanddryrentales@gmail.com">
                     <input type="text" name="Requested Expansion City or Zip" required placeholder="Enter City, State or Zip Code..." id="expInput">
                     <button type="submit" class="btn btn-primary btn-small lang-en">Submit Vote</button>
                     <button type="submit" class="btn btn-primary btn-small lang-es" style="display:none;">Enviar Voto</button>
@@ -237,19 +239,22 @@
                 </div>
             </div>
 
-            <!-- Lead Capture Interface styled cleanly with custom Blue Branding accents -->
+            <!-- Lead Capture Interface with Custom Email Endpoint Integrity Mapping -->
             <div id="contactFormContainer" class="box" style="background: white; padding: 35px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 5px solid #0284c7;">
                 <h2 style="text-align: center; color: #222; margin-bottom: 8px; font-family: Arial, sans-serif; font-size: 26px;">Washer & Dryer Rental Signup</h2>
                 <p style="text-align: center; color: #666; margin-bottom: 25px; font-family: Arial, sans-serif; font-size: 15px;">Fill out the form below and we'll contact you.</p>
 
                 <form action="https://formsubmit.co" method="POST">
 
-                    <!-- FormSubmit Configuration Settings Token Data -->
+                    <!-- FormSubmit Core Directives -->
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_subject" value="New Washer & Dryer Rental Lead">
+                    
+                    <!-- FormSubmit Compliance Parameter matches your exact domain channel address to prevent submission drops -->
+                    <input type="hidden" name="email" value="washanddryrentales@gmail.com">
 
-                    <!-- Email address field removed permanently; collecting immediate client routing profiles -->
+                    <!-- Structured Layout Controls -->
                     <div class="form-group" style="margin-bottom: 15px;">
                         <label style="display: block; font-weight: bold; margin-bottom: 5px; color: #333; font-size: 14px; font-family: Arial, sans-serif;">Full Name</label>
                         <input type="text" name="Full Name" placeholder="Full Name" required style="width:100%; padding:12px; border:1px solid #ccc; border-radius:5px; font-size:16px;">
@@ -286,7 +291,7 @@
                 </form>
             </div>
 
-            <!-- View Module B: Instant Phone Click-to-Call Layout Box Layout -->
+            <!-- View Module B: Click-to-Call Node Layout -->
             <div id="contactCallContainer" style="display: none;">
                 <div class="call-action-box" style="text-align: center; padding: 40px 20px; background: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #6b7280;">
                     <h3 class="lang-en">Call for Delivery</h3>
